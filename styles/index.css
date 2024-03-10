@@ -1,0 +1,25 @@
+:root{
+    --block-width: 100px;
+    --block-height: 100px;
+    --distance: 10px;
+}
+#add-block{
+    
+}
+#container{
+    margin: 10px;
+    padding: var(--distance) 0 0 var(--distance);
+    border: 3px solid black;
+
+    width: calc(var(--block-width) * 7 + var(--distance) * 7);
+    min-height: calc(var(--block-height) + var(--distance));
+    display: flex;
+    flex-wrap: wrap;
+}
+.block{
+    margin: 0 var(--distance) var(--distance) 0;
+    width: var(--block-width);
+    height: var(--block-height);
+    background-color: black;
+    border-radius: 50px;
+}
